@@ -1,29 +1,23 @@
 import { Link } from "react-router";
-
-const BG_IMAGE = "https://images.unsplash.com/photo-1730206562928-0efd62560435?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbGx1c3RyYXRpb24lMjBhcnQlMjBzdHVkaW8lMjB3b3Jrc3BhY2UlMjBjcmVhdGl2ZXxlbnwxfHx8fDE3NzI1NzI4NDF8MA&ixlib=rb-4.1.0&q=80&w=1080";
+import bgImage from "figma:asset/1da6855555464472d36bdbd120106b47116ad6f6.png";
 
 export function Home() {
   return (
     <div
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
-      style={{
-        backgroundImage: `url(${BG_IMAGE})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
     >
-      {/* Overlay */}
+      {/* Background image */}
       <div
         className="absolute inset-0"
-        style={{ background: "linear-gradient(135deg, rgba(102,149,200,0.55) 0%, rgba(222,197,168,0.45) 100%)" }}
+        style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center" }}
       />
 
       {/* Centered content */}
       <div className="relative z-10 text-center px-6 flex flex-col items-center gap-8">
         <h1
-          className="text-7xl md:text-9xl tracking-widest uppercase"
+          className="tracking-widest uppercase text-[125px]"
           style={{
+            fontFamily: "'FONTSPRING DEMO - Selina Bold', serif",
             color: "#E5DFD1",
             textShadow: "0 4px 32px rgba(102,149,200,0.35), 0 1px 0 rgba(222,197,168,0.5)",
             letterSpacing: "0.18em",

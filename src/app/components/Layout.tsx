@@ -5,7 +5,7 @@ export function Layout() {
   return (
     <div className="min-h-screen" style={{ background: "#E5DFD1" }}>
       <Navigation />
-      <main className="pt-20">
+      <main className="pt-[72px] sm:pt-[80px] md:pt-[104px]">
         <Outlet />
       </main>
     </div>

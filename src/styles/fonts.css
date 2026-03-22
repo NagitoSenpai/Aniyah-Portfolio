@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'FONTSPRING DEMO - Selina Bold';
+  src: url('https://raw.githubusercontent.com/NagitoSenpai/Aniyah-Portfolio/80c48043a76e1bf7daa63bba347dae815ba0d1a0/fonts/fonnts.com-sln75.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bennet Text Four';
+  src: url('https://raw.githubusercontent.com/NagitoSenpai/Aniyah-Portfolio/main/fonts/fonnts.com-Bennet-Text-Four-Semi-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}

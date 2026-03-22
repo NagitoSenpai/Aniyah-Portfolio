@@ -1,9 +1,9 @@
-import { Mail, Heart, Send } from "lucide-react";
+import { Mail, Heart, Phone } from "lucide-react";
 
 export function Contact() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
-      <div className="text-center mb-12">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+      <div className="text-center mb-10 sm:mb-12">
         <div
           className="inline-flex items-center justify-center w-20 h-20 rounded-full mb-6"
           style={{ background: "#6695c8" }}
@@ -12,23 +12,21 @@ export function Contact() {
         </div>
 
         <h1
-          className="text-5xl mb-4"
-          style={{ color: "#6695c8" }}
-        >
-          Thank You!
-        </h1>
+          className="text-4xl sm:text-5xl mb-4"
+          style={{ color: "#6695c8", fontFamily: "'FONTSPRING DEMO - Selina Bold', serif" }}
+        >Thank You<span style={{ fontFamily: "serif" }}>!</span></h1>
 
-        <p className="text-xl max-w-2xl mx-auto" style={{ color: "#7a6e62" }}>
+        <p className="text-lg sm:text-xl max-w-2xl mx-auto" style={{ color: "#7a6e62" }}>
           Thank you for taking the time to explore my work. I'd love to hear from you and
           discuss how we can bring your creative vision to life together.
         </p>
       </div>
 
       <div
-        className="rounded-2xl shadow-xl p-12 mb-12"
+        className="rounded-2xl shadow-xl p-6 sm:p-12 mb-10 sm:mb-12"
         style={{ background: "rgba(255,255,255,0.65)", border: "1px solid rgba(222,197,168,0.4)" }}
       >
-        <h2 className="text-2xl mb-6 text-center" style={{ color: "#6695c8" }}>Get in Touch</h2>
+        <h2 className="text-2xl mb-6 text-center font-[Bennet_Text_Four]" style={{ color: "#6695c8" }}>Get in Touch</h2>
 
         <div className="space-y-6">
           <div
@@ -44,11 +42,11 @@ export function Contact() {
             <div>
               <p className="text-sm mb-1" style={{ color: "#7a6e62" }}>Email me at</p>
               <a
-                href="mailto:hello@illustrator.com"
-                className="text-xl transition-colors hover:opacity-70"
+                href="mailto:Aniyah.6424@gmail.com"
+                className="text-lg sm:text-xl transition-colors hover:opacity-70 break-all"
                 style={{ color: "#6695c8" }}
               >
-                hello@illustrator.com
+                Aniyah.6424@gmail.com
               </a>
             </div>
           </div>
@@ -61,16 +59,16 @@ export function Contact() {
               className="p-3 rounded-full"
               style={{ background: "#6695c8" }}
             >
-              <Send className="w-6 h-6" style={{ color: "#E5DFD1" }} />
+              <Phone className="w-6 h-6" style={{ color: "#E5DFD1" }} />
             </div>
             <div>
-              <p className="text-sm mb-1" style={{ color: "#7a6e62" }}>Project inquiries</p>
+              <p className="text-sm mb-1" style={{ color: "#7a6e62" }}>Call or text</p>
               <a
-                href="mailto:projects@illustrator.com"
-                className="text-xl transition-colors hover:opacity-70"
+                href="tel:9732557437"
+                className="text-lg sm:text-xl transition-colors hover:opacity-70"
                 style={{ color: "#6695c8" }}
               >
-                projects@illustrator.com
+                (973) 255-7437
               </a>
             </div>
           </div>

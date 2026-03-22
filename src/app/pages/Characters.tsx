@@ -37,11 +37,11 @@ export function Characters() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
-      <div className="mb-12">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+      <div className="mb-10 sm:mb-12">
         <h1
-          className="text-5xl mb-4"
-          style={{ color: "#6695c8" }}
+          className="text-4xl sm:text-5xl mb-4"
+          style={{ color: "#6695c8", fontFamily: "'FONTSPRING DEMO - Selina Bold', serif" }}
         >
           Character Design
         </h1>
@@ -49,17 +49,17 @@ export function Characters() {
           className="w-16 h-0.5 mb-4 rounded-full"
           style={{ background: "#dec5a8" }}
         />
-        <p className="text-xl max-w-2xl" style={{ color: "#7a6e62" }}>
+        <p className="text-lg sm:text-xl max-w-2xl" style={{ color: "#7a6e62" }}>
           Original characters crafted for various media including games, animation, and comics.
           Each design tells a story and brings personality to life.
         </p>
       </div>
 
-      <div className="space-y-12">
+      <div className="space-y-10 sm:space-y-12">
         {characters.map((character, index) => (
           <div
             key={character.id}
-            className={`grid md:grid-cols-2 gap-8 items-center`}
+            className={`grid md:grid-cols-2 gap-6 sm:gap-8 items-center`}
           >
             <div className={`${index % 2 === 1 ? "md:order-2" : ""}`}>
               <div
@@ -69,7 +69,7 @@ export function Characters() {
                 <ImageWithFallback
                   src={character.image}
                   alt={character.name}
-                  className="w-full h-96 object-cover"
+                  className="w-full h-72 sm:h-96 object-cover"
                 />
               </div>
             </div>
@@ -82,9 +82,9 @@ export function Characters() {
                 {character.role}
               </div>
 
-              <h2 className="text-4xl" style={{ color: "#5a7aaa" }}>{character.name}</h2>
+              <h2 className="text-3xl sm:text-4xl" style={{ color: "#5a7aaa" }}>{character.name}</h2>
 
-              <p className="text-lg leading-relaxed" style={{ color: "#7a6e62" }}>
+              <p className="text-base sm:text-lg leading-relaxed" style={{ color: "#7a6e62" }}>
                 {character.description}
               </p>
 
