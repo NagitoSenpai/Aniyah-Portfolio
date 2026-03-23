@@ -80,23 +80,23 @@ export function SketchGallery() {
       </div>
 
       {/* Gallery grid */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 items-start">
         {category.gallery.map((item, index) => (
           <button
             key={item.id}
             onClick={() => setLightboxIndex(index)}
-            className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 text-left block w-full"
+            className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 text-left w-full flex flex-col"
             style={{
               background: "rgba(255,255,255,0.6)",
               border: "1px solid rgba(222,197,168,0.4)",
             }}
             aria-label={`Open ${item.caption}`}
           >
-            <div className="relative overflow-hidden h-56 sm:h-72">
+            <div className="relative overflow-hidden">
               <ImageWithFallback
                 src={item.src}
                 alt={item.caption}
-                className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-auto block transform group-hover:scale-105 transition-transform duration-500"
               />
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity"

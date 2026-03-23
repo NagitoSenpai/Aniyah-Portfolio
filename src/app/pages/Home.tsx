@@ -15,7 +15,7 @@ export function Home() {
       {/* Centered content */}
       <div className="relative z-10 text-center px-6 flex flex-col items-center gap-8">
         <h1
-          className="tracking-widest uppercase text-[125px]"
+          className="tracking-widest uppercase text-[60px] sm:text-[90px] md:text-[125px]"
           style={{
             fontFamily: "'FONTSPRING DEMO - Selina Bold', serif",
             color: "#E5DFD1",
