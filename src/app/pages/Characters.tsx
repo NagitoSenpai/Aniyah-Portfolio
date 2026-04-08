@@ -1,39 +1,32 @@
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
-
 export function Characters() {
   const characters = [
     {
       id: 1,
-      name: "The Wanderer",
-      role: "Fantasy RPG Character",
-      description: "A mysterious traveler with a hidden past, designed for an indie game project.",
-      image: "https://images.unsplash.com/photo-1772389634170-481480aa05b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGFyYWN0ZXIlMjBkZXNpZ24lMjBjb25jZXB0JTIwYXJ0fGVufDF8fHx8MTc3MjU3MTU5MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["Fantasy", "RPG", "Hero"]
+      name: "Jake",
+      role: "Demonology — Main Character",
+      description: "Dr. Jake Hedricks is a 28-year-old scientist at Ophelia University, a lifelong dream fueled by his passion for demonology, the study of non-human creatures from government tests and experiments. His dedication to research often overrides his emotional instincts, leaving him perpetually exhausted and socially clinical. He tends to substitute everyday words with technical ones (the bathroom becomes \"the sanitization zone\"), and his composed professional demeanor is the only thing standing between him and the feelings he's quietly developing for his favorite test subject.",
+      // Replace with raw GitHub URL once image is pushed to the repo
+      image: "https://raw.githubusercontent.com/NagitoSenpai/Aniyah-Portfolio/main/images/characters/jake.png",
+      tags: ["Analytical", "Workaholic", "Emotionally Repressed", "Dedicated"]
     },
     {
       id: 2,
-      name: "Luna the Scientist",
-      role: "Animated Series Protagonist",
-      description: "A brilliant young inventor who solves problems with creativity and science.",
-      image: "https://images.unsplash.com/photo-1759863738666-7584248cdf7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21pYyUyMGJvb2slMjBjaGFyYWN0ZXIlMjBhcnR8ZW58MXx8fHwxNzcyNTcxNTkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["Cartoon", "STEM", "Kids"]
+      name: "Kai",
+      role: "Demonology — Main Character",
+      description: "Once known only as Test Subject #1542, Kai is approximately 200 years old, the equivalent of 19 in human years. For most of his time in Jake's care, he was treated like any other feral demon: tested on, injected with substances, and monitored around the clock. That all changed when Jake began a domestication study for a research paper. Given the chance to exist beyond a number, Kai's personality blossomed into something mischievous, cunning, and wholly his own: a food-motivated love bug with a sharp edge.",
+      // Replace with raw GitHub URL once image is pushed to the repo
+      image: "https://raw.githubusercontent.com/NagitoSenpai/Aniyah-Portfolio/main/images/characters/kai.png",
+      tags: ["Mischievous", "Cunning", "Food-Motivated", "Adaptable"]
     },
     {
       id: 3,
-      name: "Captain Steele",
-      role: "Comic Book Hero",
-      description: "A cyberpunk vigilante fighting corporate corruption in a dystopian future.",
-      image: "https://images.unsplash.com/photo-1633984568401-79572ce094eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbGx1c3RyYXRpb24lMjBwb3J0Zm9saW8lMjBhcnR3b3JrfGVufDF8fHx8MTc3MjU3MTU5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["Cyberpunk", "Action", "Comics"]
+      name: "Eric",
+      role: "Demonology — Supporting Character",
+      description: "Dr. Eric Reeves is Jake's childhood friend and colleague at Ophelia University, a few years his senior at around 30. He works in the Advanced Physics Lab halfway across campus, far enough to mind his own business, close enough to show up exactly when Jake doesn't want him to. Eccentric and relentlessly teasing, Eric nonetheless carries a genuine brotherly love for Jake. He becomes an unexpected guide when Jake's emotions start getting the better of him, helping him figure out how to navigate feelings he was never trained to understand.",
+      // Replace with raw GitHub URL once image is pushed to the repo
+      image: "https://raw.githubusercontent.com/NagitoSenpai/Aniyah-Portfolio/main/images/characters/eric.png",
+      tags: ["Eccentric", "Teasing", "Brotherly", "Perceptive"]
     },
-    {
-      id: 4,
-      name: "Zephyr & Co.",
-      role: "Mascot Collection",
-      description: "A set of whimsical characters for a children's brand identity.",
-      image: "https://images.unsplash.com/photo-1605007621946-916b7a9b6e90?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGFydGlzdCUyMGRyYXdpbmd8ZW58MXx8fHwxNzcyNTcxNTkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      tags: ["Mascot", "Branding", "Cute"]
-    }
   ];
 
   return (
@@ -59,17 +52,21 @@ export function Characters() {
         {characters.map((character, index) => (
           <div
             key={character.id}
-            className={`grid md:grid-cols-2 gap-6 sm:gap-8 items-center`}
+            className="grid md:grid-cols-2 gap-6 sm:gap-8 items-center"
           >
-            <div className={`${index % 2 === 1 ? "md:order-2" : ""}`}>
+            <div className={index % 2 === 1 ? "md:order-2" : ""}>
               <div
                 className="rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 transition-transform duration-300"
-                style={{ border: "1px solid rgba(222,197,168,0.4)" }}
+                style={{
+                  border: "1px solid rgba(222,197,168,0.4)",
+                  marginLeft: index === 0 ? "-2rem" : undefined,
+                }}
               >
-                <ImageWithFallback
+                <img
                   src={character.image}
                   alt={character.name}
-                  className="w-full h-72 sm:h-96 object-cover"
+                  className="w-full h-auto block"
+                  style={{ background: "#ece6e3" }}
                 />
               </div>
             </div>

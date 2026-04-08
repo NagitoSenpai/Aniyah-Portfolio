@@ -15,12 +15,13 @@ export function Home() {
       {/* Centered content */}
       <div className="relative z-10 text-center px-6 flex flex-col items-center gap-8">
         <h1
-          className="tracking-widest uppercase text-[60px] sm:text-[90px] md:text-[125px]"
+          className="tracking-widest uppercase"
           style={{
             fontFamily: "'FONTSPRING DEMO - Selina Bold', serif",
             color: "#E5DFD1",
             textShadow: "0 4px 32px rgba(102,149,200,0.35), 0 1px 0 rgba(222,197,168,0.5)",
             letterSpacing: "0.18em",
+            fontSize: "clamp(3rem, 8vw, 80px)",
           }}
         >
           Portfolio

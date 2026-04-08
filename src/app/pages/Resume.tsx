@@ -181,11 +181,12 @@ export function Resume() {
         </div>
 
         <a
-          href="#"
-          onClick={(e) => e.preventDefault()}
+          href="https://raw.githubusercontent.com/NagitoSenpai/Aniyah-Portfolio/a299f0d6f378f82bc3d10dd7882d16c8e25a9124/Resume/Resume.pdf"
+          download="Aniyah_Williams_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-full transition-all duration-200 hover:shadow-md hover:opacity-90 shrink-0 self-start sm:self-auto"
           style={{ background: "#6695c8", color: "#E5DFD1" }}
-          title="Wire this href to your hosted PDF file"
         >
           <Download className="w-4 h-4" />
           Download PDF
